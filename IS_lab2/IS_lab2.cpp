@@ -337,6 +337,10 @@ int main()
     int ncross;
     double t; //коэф максимальной выживаемости у поколения
 
+    cout << "   ВЕЩЕСТВЕННОЕ КОДИРОВАНИЕ";
+    
+    cout << endl;
+
     cout << "Введите число поколений  ";
     cin >> maxgen;
 
@@ -374,7 +378,7 @@ int main()
         gen++;
         generation(); // создаем новое поколение 
         statistics(newpop); // находим больший коэффициент выживаемости у поколения
-        cout << max0 << endl;
+      //  cout << max0 << endl;
         if (max0 > t)
             t = max0;
         for (int i = 0; i < maxpop; i++) // новое поколение превращаем в старое 
@@ -386,10 +390,10 @@ int main()
     cout << "Ответ: " << t;
     cout << endl;
 
-    ofstream Result("ResultV.txt"); //Созданием Файл  с результатом
+    ofstream Result("ResultVCode.txt"); //Созданием Файл  с результатом
 
     if (Result.is_open()) // проверка на открытие
-        cout << "Ответ записан в файл ResultV!\n\n" << endl;
+        cout << "Ответ записан в файл ResultVCode!\n\n" << endl;
     else
     {
         cout << "Ошибка записи в файл" << std::endl;
