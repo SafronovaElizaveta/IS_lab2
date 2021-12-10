@@ -361,8 +361,6 @@ int main()
 
     cout << endl;
  
-    cout << endl;
-    cout << endl;
 
     //массив для хранния максимальных значений
     double* maxmass;
