@@ -356,10 +356,10 @@ int main()
    // }
 
     cout << endl;
-   // cout << t << endl;
+ 
     cout << endl;
     cout << endl;
-    cout << endl;
+
     //массив для хранния максимальных значений
     double* maxmass;
     maxmass = new double[maxgen];
